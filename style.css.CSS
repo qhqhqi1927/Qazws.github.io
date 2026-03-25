@@ -104,29 +104,29 @@ body {
     padding: 0 20px;
     line-height: 1.5;
 }
-/* Общая сетка для трех колонок */
+
 .news-grid {
     display: flex;
     gap: 20px;
-    flex: 3; /* Занимает 3 части пространства против 1 части у Markets */
+    flex: 3; 
     border-top: 3px solid black;
     padding-top: 15px;
 }
 
-/* Стили для каждой колонки */
+
 .news-item {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-/* Разделительные линии между колонками */
+
 .news-item:not(:last-child) {
     border-right: 1px solid #ddd;
     padding-right: 15px;
 }
 
-/* Контейнер для фото, чтобы они были одного размера */
+
 .news-image-container {
     width: 100%;
     height: 180px; 
@@ -137,7 +137,7 @@ body {
 .article-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Фото заполнит блок без искажений */
+    object-fit: cover;
     display: block;
 }
 
