@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода — Falseberg</title>
+    <link rel="stylesheet" href="style.css.CSS">
+    <style>
+        /* Дополнительные стили специально для карточки погоды */
+        .weather-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            width: 100%;
+        }
+        .weather-card {
+            background: #fff;
+            padding: 40px;
+            text-align: center;
+            border-top: 5px solid #ff004f; /* Твой фирменный красный цвет */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+        .city-name {
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .temp-display {
+            font-size: 80px;
+            font-weight: 900;
+            margin: 15px 0;
+            color: #000;
+        }
+        .weather-status {
+            font-size: 18px;
+            color: #ff004f;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Falseberg</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Экономика</a></li>
+                <li><a href="#">Технология</a></li>
+                <li><a href="#">Политика</a></li>
+                <li><a href="weather.html" style="color: #ff004f;">Погода</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="ticker">
+        <span class="ticker-label">МЕТЕОСВОДКА</span>
+        <marquee>Прогноз погоды для вашего города обновлен 1 минуту назад</marquee>
+    </div>
+
+    <main class="container">
+        <div class="weather-container">
+            <section class="weather-card">
+                <div class="city-name">Джалал-Абад</div>
+                <div class="temp-display">+22°C</div>
+                <div class="weather-status"> Солнечно</div>
+                <p style="margin-top: 20px; color: #666; font-size: 14px;">
+                    Ощущается как +24°C. Прекрасный день для прогулки!
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
